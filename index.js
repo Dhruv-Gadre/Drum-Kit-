@@ -29,7 +29,7 @@ function makeSound(key) {
             audio.play();
             break;
         case 'j':
-            var audio = new Audio("sounds/crash.mp3");
+            var audio = new Audio("sounds/snare.mp3");
             audio.play();
             break;
         case 'k':
@@ -37,7 +37,7 @@ function makeSound(key) {
             audio.play();
             break;
         case 'l':
-            var audio = new Audio("sounds/snare.mp3");
+            var audio = new Audio("sounds/crash.mp3");
             audio.play();
             break;
 
@@ -58,13 +58,13 @@ for (var j = 0; j < numberOfDrums; j++) {
 
 
 //Function to make the button flash when clicked/key is pressed
-function flashButton(currentKey){
-    var activeButton = document.querySelector("."+currentKey);
+function flashButton(currentKey) {
+    var activeButton = document.querySelector("." + currentKey);
     activeButton.classList.add("pressed");
 
     //Wait for sometime and then remove the flash, It waits for 100ms
 
-    setTimeout(function(){
+    setTimeout(function () {
         activeButton.classList.remove("pressed");
-    },100);
+    }, 100);
 }
